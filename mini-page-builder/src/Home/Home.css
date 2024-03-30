@@ -15,3 +15,7 @@
     border: 1px solid black;
     width: 100px;
 }
+
+.selected {
+  border: 2px solid red;
+}
