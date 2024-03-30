@@ -1,0 +1,11 @@
+#sidebar-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    width: 20vw;
+    background-color: black;
+    gap: 20px;
+    align-items: center;
+    padding: 10px;
+}

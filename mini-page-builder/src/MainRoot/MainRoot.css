@@ -1,0 +1,58 @@
+#main-container{
+    display: flex;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.x{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.y{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.font-size{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.font-weight{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.submit-btn input{
+    background-color: blue;
+    color: white;
+}
+
+.submit-btn input:hover{
+    cursor: pointer;
+}
+
+
+
+
+input{
+    padding: 7px;
+    border-radius: 3px;
+}
+
