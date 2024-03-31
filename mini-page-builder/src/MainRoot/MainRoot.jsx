@@ -29,7 +29,18 @@ const MainRoot = () => {
     const [form, setForm] = useState('')
     const [selectedElement, setSelectedElement] = useState(null);
 
-    const { domEle } = useRef(null)
+    const {domEle} = useRef(null)
+
+    const handleExport = () => {
+        const data = localStorage.getItem('data');
+        const blob = new Blob([data], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'page_data.json';
+        a.click();
+        URL.revokeObjectURL(url);
+    };
 
 
     const handleChange = (e) => {
@@ -115,7 +126,7 @@ const MainRoot = () => {
                     <Home homePageData={homePage} />
                 </div>
                 <div>
-                    <Sidebar sidebarData={sidebar} />
+                    <Sidebar sidebarData={sidebar} handleExport={handleExport}/>
                 </div>
             </div>
             {modalOpen && (

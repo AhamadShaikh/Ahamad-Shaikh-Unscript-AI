@@ -3,7 +3,7 @@ import DraggableCard from '../DraggableCard';
 import "./Sidebar.css"
 import { Droppable } from 'react-beautiful-dnd';
 
-const Sidebar = ({ sidebarData }) => {
+const Sidebar = ({ sidebarData ,handleExport}) => {
     return (
         <div id='sidebar-main'>
             <Droppable droppableId='sidebar'>
@@ -23,6 +23,9 @@ const Sidebar = ({ sidebarData }) => {
                 }
 
             </Droppable>
+            <div className='buttton'>
+                <button onClick={handleExport}>Export json fle</button>
+            </div>
 
         </div>
     )
